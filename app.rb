@@ -40,7 +40,7 @@ class App < Sinatra::Base
       prod = (num1 * num2).to_s
       prod
     when "add"
-      quo = (num1 / num2).to_s
+      quo = (num1/num2).to_s
       quo
     end
   end
