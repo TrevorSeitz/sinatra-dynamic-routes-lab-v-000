@@ -39,8 +39,8 @@ class App < Sinatra::Base
     when "multiply"
       prod = (num1 * num2).to_s
       prod
-    when "add"
-      quo = (num1/num2).to_s
+    when "divide"
+      quo = (num1 / num2).to_s
       quo
     end
   end
