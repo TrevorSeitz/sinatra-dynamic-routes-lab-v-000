@@ -26,6 +26,21 @@ class App < Sinatra::Base
   end
 
   get '/:operation/:number1/:number2' do
+    num1 = params[:number1].to_f
+    num2 = params[:number2].to_f
 
+    case params[:operation]
+    when "add"
+      sum = (num1 + num2).to_s
+      sum
+    when "subtract"
+      dif = (num1 - num2).to_s
+      dif
+    when "multiply"
+      prod = (num1 * num2).to_s
+      prod
+    when "add"
+      quo = (num1 / num2).to_s
+      quo
   end
 end
